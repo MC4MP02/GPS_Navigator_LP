@@ -8,11 +8,27 @@ class CamiBase {
 public:
 	virtual std::vector<Coordinate> getCamiCoords() = 0;
 private:
+
 };
 
 class CamiSolucio : public CamiBase {
 public:
-	void setCoord(Coordinate coordinate) { m_coordenadas = coordinate; }
+
+	CamiSolucio* clone() { return new CamiSolucio(*this); }
+
+	void setVectorCoord(vector<Coordinate> cami)
+	{
+		vector<Coordinate>::iterator it;
+		for (it = cami.begin(); it != cami.end(); it++)
+		{
+			m_cami.push_back(*it);
+		}
+	}
+
+	std::vector<Coordinate> getVectorCoord()
+	{
+		return m_cami;
+	}
 
 	std::vector<Coordinate> getCamiCoords()
 	{
@@ -40,6 +56,5 @@ public:
 		return m_cami;
 	}
 private:
-	Coordinate m_coordenadas;
 	vector<Coordinate> m_cami;
 };

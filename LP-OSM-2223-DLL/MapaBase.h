@@ -19,9 +19,13 @@ class MapaSolucio : public MapaBase
 {
 public:
 	MapaSolucio() {}
-	void getCamins(std::vector<CamiBase*>&){
-
+	void getCamins(std::vector<CamiBase*>& camins){
 		
+		CamiSolucio cs;
+		cs.setVectorCoord(cs.getCamiCoords());
+		camins.push_back(new CamiSolucio(cs));
+
+
 	}
 	void parsejaXmlElements(std::vector<XmlElement>& xmlElements)
 	{
