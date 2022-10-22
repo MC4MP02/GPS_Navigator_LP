@@ -1,10 +1,11 @@
 #pragma once
 
 #include "pch.h"
-
+#include <iostream>
 #include <functional>
 #include <string>
 #include <vector>
+using namespace std;
 
 typedef std::pair<std::string, std::string> PAIR_ATTR_VALUE;
 typedef std::pair<std::string, std::vector<PAIR_ATTR_VALUE>> CHILD_NODE;

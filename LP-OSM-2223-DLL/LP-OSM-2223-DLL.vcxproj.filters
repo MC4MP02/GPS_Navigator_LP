@@ -24,9 +24,6 @@
     <ClInclude Include="MapaRender.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="XML4OSMUtil.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="MapaBase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -40,6 +37,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="PuntDeInteresBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="XML4OSMUtil.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
