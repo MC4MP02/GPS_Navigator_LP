@@ -1,0 +1,6 @@
+﻿  DLL-Bridge.cpp
+  MapaRender.cpp
+D:\maarc\Personal\UNI\2\LP\PROYECTO\estudiants\LP-OSM-2223-DLL\MapaRender.cpp(37,57): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+  Generando código...
+     Creando biblioteca D:\maarc\Personal\UNI\2\LP\PROYECTO\estudiants\x64\Debug\LP-OSM-2223-DLL.lib y objeto D:\maarc\Personal\UNI\2\LP\PROYECTO\estudiants\x64\Debug\LP-OSM-2223-DLL.exp
+  LP-OSM-2223-DLL.vcxproj -> D:\maarc\Personal\UNI\2\LP\PROYECTO\estudiants\x64\Debug\LP-OSM-2223-DLL.dll

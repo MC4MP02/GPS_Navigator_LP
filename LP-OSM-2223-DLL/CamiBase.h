@@ -32,6 +32,7 @@ public:
 
 	std::vector<Coordinate> getCamiCoords()
 	{
+		vector<Coordinate> vector;
 		Coordinate c1;
 		c1.lat = 41.4928803;
 		c1.lon = 2.1452381;
@@ -48,12 +49,12 @@ public:
 		c4.lat = 41.4939882;
 		c4.lon = 2.1456419;
 
-		m_cami.push_back(c1);
-		m_cami.push_back(c2);
-		m_cami.push_back(c3);
-		m_cami.push_back(c4);
+		vector.push_back(c1);
+		vector.push_back(c2);
+		vector.push_back(c3);
+		vector.push_back(c4);
 
-		return m_cami;
+		return vector;
 	}
 private:
 	vector<Coordinate> m_cami;

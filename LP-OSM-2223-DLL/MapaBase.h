@@ -8,10 +8,10 @@
 
 class MapaBase {
 
-	public:
-		virtual void getPdis(std::vector<PuntDeInteresBase*>&) = 0;
-		virtual void getCamins(std::vector<CamiBase*>&) = 0;
-		virtual void parsejaXmlElements(std::vector<XmlElement>& xmlElements) = 0;
+public:
+	virtual void getPdis(std::vector<PuntDeInteresBase*>&) = 0;
+	virtual void getCamins(std::vector<CamiBase*>&) = 0;
+	virtual void parsejaXmlElements(std::vector<XmlElement>& xmlElements) = 0;
 
 };
 
@@ -19,11 +19,11 @@ class MapaSolucio : public MapaBase
 {
 public:
 	MapaSolucio() {}
-	void getCamins(std::vector<CamiBase*>& camins){
-		
-		CamiSolucio cs;
-		cs.setVectorCoord(cs.getCamiCoords());
-		camins.push_back(new CamiSolucio(cs));
+	void getCamins(std::vector<CamiBase*>& camins) {
+
+		CamiBase* c = new CamiSolucio;
+		c->getCamiCoords();
+		camins.push_back(c);
 
 
 	}

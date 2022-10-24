@@ -9,10 +9,7 @@ MapaRender::MapaRender() {
     this->m_xml4osm_util = new XML4OSMUtil();
     
     // TODO: Cal que instancieu m_mapaBase amb la vostra MapaSolucio
-    MapaBase* mb;
-    vector<PuntDeInteresBase*> pdis;
-    mb->getPdis(pdis);
-    m_mapaBase = mb;
+    this->m_mapaBase = new MapaSolucio();
 }
 
 // DO NOT TOUCH THIS
